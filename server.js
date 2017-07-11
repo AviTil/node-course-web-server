@@ -53,6 +53,13 @@ app.get('/about', function(req, res){
     });
 })
 
+app.get('/portfolio', function(req, res){
+    res.render('portfolio.hbs', {
+        pageTitle: 'Portfolio',
+        date: new Date().getFullYear()
+    })
+})
+
 
 /*app.get('/bad', function(req, res){
     res.send({
